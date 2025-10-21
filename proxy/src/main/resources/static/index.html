@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parcial 2 - Ejercicio Lucas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Ejercicio de Lucas</h1>
+<h2>Hecho por: Nicolás Prieto Vargas</h2>
+<h3>Explicación: Esta es una secuencia de números la cual sigue el patrón de que el primer número de la secuencia es 2, el segundo es 1 y de ahí en adelante es la suma de los dos números anteriores (Parecido a Fibonacci)</h3>
+<h3>Lo que tú debes hacer es ingresar la longitud de la lista y te daré la lista con esa cantidad de números</h3>
+<h2>Ingresa la longitud de la lista</h2>
+<form action="/lucasseq">
+    <input type="number" id="numero" name="numero" value="4"><br><br>
+    <input type="button" value="Generar lista" onclick="loadGetMsg(numero)">
+</form>
+<div id="getrespmsg"></div>
+<script>
+    function loadGetMsg() {
+    let nameVar = document.getElementById("name").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+    document.getElementById("getrespmsg").innerHTML =
+    this.responseText;
+    }
+    xhttp.open("GET", "/lucasseq?value="+nameVar);
+    xhttp.send();
+    }
+</script>
+</body>
+</html>
