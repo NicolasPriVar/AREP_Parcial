@@ -49,3 +49,12 @@ Ahora en la instancia Podemos ver el .jar
 Hacemos lo mismo para la otra instancia de Math Service
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/abeab4e9-54e0-4175-8519-0ccb223372e9" />
+
+## Lo que se logró:
+- Solucionar el ejercicio matemático
+- Crear las instancias de manera correcta y sin errores
+- Subir el .jar del ejercicio matemático a las instancias correspondientes.
+- Asignar IPs estáticas para evitar tener que cambiar después las IP en el código
+- Conectar el proxy con las instancias de Math Service
+## Lo que no se logró:
+- Conectar el front con el back
