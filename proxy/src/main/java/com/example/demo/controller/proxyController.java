@@ -24,6 +24,6 @@ public class proxyController {
         String query = httpServerletRequest.getQueryString() != null ? "?" + httpServerletRequest.getQueryString():"";
         String url = server + path + query;
         String response = httpConnectionExample.get(url);
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response)
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
     }
 }
